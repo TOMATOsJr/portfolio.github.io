@@ -1,0 +1,399 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --black: white;
+    /* white,black */
+    --white: black;
+    /* black,white */
+    --backgd: rgb(202, 221, 227);
+    /* rgb(202, 221, 227),rgb(28, 27, 27) */
+    --section: rgb(88, 143, 159);
+    /* rgb(88, 143, 159),rgb(34, 56, 63) */
+    --highlight: rgb(14, 61, 92);
+    /* rgb(14, 61, 92),rgb(34, 146, 221) */
+}
+
+body {
+    background-color: var(--backgd);
+}
+
+nav {
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+    width: 100vw;
+    background-color: var(--backgd);
+    height: 7vh;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Home {
+    margin-left: 80px;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:hover {
+    background-color: rgb(34, 146, 221);
+    border-radius: 40px;
+    padding: 5px;
+    color: var(--black);
+}
+
+.extra {
+    display: -webkit-flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div h1 {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1000%;
+    text-align: center;
+    color: rgb(41, 129, 212);
+    /* background: linear-gradient(to right, #ff0000, rgb(47, 43, 43), #ff0000,rgb(22, 21, 21));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+}
+
+#main {
+    width: 1300px;
+    margin: auto;
+}
+
+.about {
+    display: -webkit-flex;
+    flex-direction: row;
+    background-color: var(--black);
+    justify-content: space-evenly;
+    width: 1300px;
+    height: 500px;
+    /* margin: auto; */
+    margin-top: 100px;
+    /* margin-bottom: 300px; */
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.aboutdet {
+    width: 50%;
+    color: rgb(34, 146, 221);
+    font-size: xxx-large;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.aboutimg {
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.sections {
+    width: 1300px;
+    height: 500px;
+    background-color: var(--section);
+    /* rgb(88, 143, 159),rgb(34, 56, 63) */
+    /* margin: auto; */
+    margin-bottom: 100px;
+    border-radius: 40px;
+    display: -webkit-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.assets {
+    width: 30%;
+    height: 80%;
+    background-color: var(--black);
+    border: none;
+    border-radius: 40px;
+    color: rgb(34, 146, 221);
+    /* rgb(34, 146, 221); */
+    text-align: center;
+    font-size: xxx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.2s;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.assets:hover {
+    border: 4px solid var(--highlight);
+}
+
+@media (min-width: 610px) {
+    .assets:active {
+        position: absolute;
+        height: 600px;
+        width: 600px;
+        margin-bottom: 40px;
+    }    
+}
+
+ul {
+    font-size: x-large;
+    text-align: start;
+    /* margin: auto; */
+}
+
+li {
+    list-style: inside;
+    color: var(--white);
+    list-style-type: disc;
+}
+
+.socials {
+    color: var(--white);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading {
+    color: var(--white);
+    font-size: xxx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+#blogflex {
+    margin: auto;
+    display: -webkit-flex;
+    width: 1000px;
+    margin-bottom: 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    background-color: var(--section);
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.blog:hover {
+    transform: scale(1.1);
+}
+
+#blogcontent1 {
+    width: 80%;
+    height: 60%;
+    background-color: var(--black);
+    background-image: url("website.jpeg");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#blogcontent2 {
+    width: 80%;
+    height: 60%;
+    background-color: var(--black);
+    background-image: url("questions.jpeg");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.blogtitle {
+    font-size: large;
+    color: var(--black);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    background-color: var(--section);
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+#myfile {
+    width: 80%;
+    height: 60%;
+    background-color: var(--black);
+    background-image: url("file.jpeg");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer #icons a {
+    color: white;
+    font-size: xxx-large;
+    border-radius: 20px;
+}
+
+footer p {
+    color: white;
+    font-size: x-large;
+}
+
+#icons {
+    display: -webkit-flex;
+    width: 30%;
+    display: -webkit-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: var(--white);
+        transition: 0.3s;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .extra {
+        display: -webkit-flex;
+        width: 60%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #Home {
+        margin-left: 10px;
+    }
+
+    #main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .about {
+        display: -webkit-flex;
+        flex-direction: column;
+        background-color: var(--black);
+        justify-content: space-evenly;
+        /* align-items: center; */
+        width: 400px;
+        height: 600px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 40px;
+    }
+
+    .aboutdet {
+        width: 70%;
+        text-align: center;
+        /* margin-bottom: 80px; */
+        color: rgb(34, 146, 221);
+        font-size: x-large;
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .aboutimg {
+        width: 40%;
+        height: 30%;
+        border-radius: 20px;
+    }
+
+    .sections {
+        width: 400px;
+        height: 1200px;
+        background-color: var(--section);
+        /* rgb(88, 143, 159),rgb(34, 56, 63) */
+        margin: auto;
+        margin-bottom: 100px;
+        border-radius: 40px;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .assets {
+        width: 80%;
+        height: 30%;
+        background-color: var(--black);
+        border: none;
+        border-radius: 40px;
+        color: rgb(34, 146, 221);
+        /* rgb(34, 146, 221); */
+        text-align: center;
+        font-size: xx-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: none;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #blogflex {
+        margin: auto;
+        display: -webkit-flex;
+        width: 90%;
+        margin-bottom: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 250px;
+        margin-bottom: 80px;
+        background-color: var(--section);
+        border-radius: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    .blog:hover {
+        transform: scale(1.1);
+    }
+
+    #Myfile.heading {
+        color: var(--white);
+        font-size: xxx-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: underline;
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+}
